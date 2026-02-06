@@ -2,6 +2,22 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.3.
 
+## Customize it (important)
+
+Update these in `src/app/app.ts`:
+
+- **`gfName`**: set this to your girlfriend's name (the gate only unlocks for this exact name, case-insensitive).
+- **`memories`**: update the 3 paragraphs/titles if you want.
+
+Add your files to `public/`:
+
+- **Photos**:
+  - `public/memories/memory-1.jpg`
+  - `public/memories/memory-2.jpg`
+  - `public/memories/memory-3.jpg`
+- **Video message**:
+  - `public/valentine-message.mp4`
+
 ## Development server
 
 To start a local development server, run:
