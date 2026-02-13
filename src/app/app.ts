@@ -37,31 +37,31 @@ function rand(min: number, max: number) {
   styleUrl: './app.css',
 })
 export class App {
-  // Change this to your girlfriend's name (must match the input to unlock).
+
   protected readonly gfName = 'Isha Todi';
 
   // Put your assets in /public so they load as /memories/... and /valentine.mp4
   protected readonly memories: Memory[] = [
     {
       title: 'Memory #1',
-      subtitle: 'That day I couldn’t stop smiling',
-      imageSrc: '/memories/memory-1.jpg',
+      subtitle: 'That day I couldn’t stop smiling on my way to home',
+      imageSrc: '/memories/memory-1.jpeg',
       paragraph:
-        'I still think about this moment all the time. Being with you makes everything feel softer, warmer, and more like home.',
+        'I met a person, now that person is love of my life, the way you blended in my life is like you completed me. I can never love someone else the way I love you and will continue to love you even more, you are my partner, my lover, my best friend and I love to do to everything with you all the fun, going out with you, having new food, exploring restaurants, and then exploring each other. Isha you are pure and I love you for you, I dont seek any other person, You will be my wife! ❤️❤️💋💋💋💋💋💋',
     },
     {
       title: 'Memory #2',
-      subtitle: 'You + me = my favorite place',
-      imageSrc: '/memories/memory-2.jpg',
+      subtitle: 'You + me = my favorite place❤️❤️',
+      imageSrc: '/memories/memory-2.jpeg',
       paragraph:
-        'You make the ordinary feel magical. I love the way you understand me, the way you laugh, and the way you make my world brighter.',
+        'Isha, my love you are incredibly sexy, with a presence that is both hot and breathtaking. Your boobies and lips are a perfect blend of seduction and sweetness, making you impossible to forget. I miss you deeply, your captivating beauty and magnetic charm always on my mind. All I want is to hold you close and love you like you deserves the best.Be mine Ishu, I am obsessed with you ❤️❤️💋💋You are a vision of grace, your beauty as radiant as the petals you adore. With flowers in your hair and elegance in your step, you carry yourself like a timeless muse. Every outfit you wear speaks of chic sophistication, blending style with effortless charm. Your love for nature and fashion creates a delicate harmony that leaves everyone enchanted.',
     },
     {
       title: 'Memory #3',
-      subtitle: 'The little things I adore',
-      imageSrc: '/memories/memory-3.jpg',
+      subtitle: 'My True Love you are the most beautiful girl in the world❤️❤️',
+      imageSrc: '/memories/memory-3.jpeg',
       paragraph:
-        'I’m grateful for you, for us, and for every tiny moment in between. I can’t wait to make a million more memories with you.',
+        'One night The boy was driving car and the Moon, who is a symbol of Beauty and Love, asked the boy have you seen anyone prettier than me. Without any hesitation, he answered The Thicc Girl. There lives a girl far away, whose beauty cant be ignored, God took time to create her, even the small details were not ignored.Her skin softer than talc, Her eyes deeper than thoughts, Her smile gorgeous than the most shiny diamond. Her curves more alluring than the cresent moon, Her lips to be perfect than the golden ratio. No wonder she was the gods proudest work.The night got over and the ashamed moon left, The night got over, the sun kissed her. The glow was mesmerizing than ever.❤️❤️💋💋💋💋💋💋',
     },
   ];
 
@@ -103,7 +103,7 @@ export class App {
     }
 
     if (actual !== expected) {
-      this.gateError.set('Oops… this page is only for my favorite person.');
+      this.gateError.set('Oops… this whole website is only for love of my life.');
       return;
     }
 

@@ -17,7 +17,7 @@
     <header class="topbar">
       <div class="brand" aria-label="Valentine app">
         <span class="brand__icon" aria-hidden="true">💛</span>
-        <span class="brand__text">Our little Valentine story</span>
+        <span class="brand__text">Our Valentine story</span>
       </div>
 
       @if (slide() !== 'gate') {
@@ -63,9 +63,9 @@
       @if (slide() === 'gate') {
         <div class="slide slide--center">
           <p class="kicker">A tiny secret doorway</p>
-          <h1 class="title" data-testid="gate-title">Type your name to unlock our memories</h1>
+          <h1 class="title" data-testid="gate-title">Type your full name to unlock our memories</h1>
           <p class="subtitle">
-            (Only one name works. No pressure. Just… be you.)
+            (Only one name works..)
           </p>
 
           <div class="gate">
@@ -76,7 +76,7 @@
                 [value]="enteredName()"
                 (input)="enteredName.set(($any($event.target).value ?? ''))"
                 (keydown.enter)="start()"
-                placeholder="e.g. Ananya"
+                placeholder="e.g. your full name"
                 autocomplete="off"
               />
             </label>
@@ -89,10 +89,6 @@
           @if (gateError()) {
             <p class="error" role="alert">{{ gateError() }}</p>
           }
-
-          <p class="hint">
-            Tip: update the real name inside <code>src/app/app.ts</code>.
-          </p>
         </div>
       }
 
@@ -108,7 +104,7 @@
             </div>
 
             <div class="memory__text">
-              <p class="kicker">Memory {{ idx + 1 }} of 3</p>
+              <p class="kicker">Moments with you {{ idx + 1 }} of 3</p>
               <h2 class="title title--sm">{{ m.title }}</h2>
               <p class="subtitle subtitle--sm">{{ m.subtitle }}</p>
 
@@ -137,7 +133,7 @@
           <p class="kicker">Okay… deep breath</p>
           <h1 class="title">Will you be my Valentine, {{ displayName() }}?</h1>
           <p class="subtitle">
-            I promise: flowers, laughs, and a day that feels like a warm hug.
+            I promise you flowers, spicy fun, laughs, lots of love, drinks, cuddles, kisses and a feeling of all my love and affection. I promise you that I will pamper you all my life.
           </p>
 
           <div
