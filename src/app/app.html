@@ -171,14 +171,53 @@
               <p class="kicker">She said yes?!</p>
               <h1 class="title title--sm">Yay. It’s a date.</h1>
               <p class="subtitle subtitle--sm">
-                Here’s a little video for you, and then pick a time that feels perfect.
+                Here’s a little gift for you, and then pick a time that feels perfect.
               </p>
 
-              <div class="videoCard">
-                <video class="video" [src]="videoSrc" controls playsinline></video>
-                <p class="videoHint">
-                  Put your video at <code>public/valentine-message.mp4</code>
-                </p>
+              <div class="giftCard">
+                <div class="giftBox" [class.giftBox--opened]="giftOpened()" (click)="openGift()">
+                  <div class="giftBox__lid"></div>
+                  <div class="giftBox__body">
+                    <div class="giftBox__ribbon giftBox__ribbon--horizontal"></div>
+                    <div class="giftBox__ribbon giftBox__ribbon--vertical"></div>
+                    <div class="giftBox__bow giftBox__bow--left"></div>
+                    <div class="giftBox__bow giftBox__bow--right"></div>
+                  </div>
+                </div>
+                
+                @if (giftOpened()) {
+                  <div class="bouquet">
+                    <div class="bouquet__flowers">
+                      <div class="bouquet__rose bouquet__rose--1">🌹</div>
+                      <div class="bouquet__rose bouquet__rose--2">🌹</div>
+                      <div class="bouquet__rose bouquet__rose--3">🌹</div>
+                      <div class="bouquet__rose bouquet__rose--4">🌹</div>
+                      <div class="bouquet__rose bouquet__rose--5">🌹</div>
+                      <div class="bouquet__rose bouquet__rose--6">🌹</div>
+                      <div class="bouquet__rose bouquet__rose--7">🌹</div>
+                      <div class="bouquet__rose bouquet__rose--8">🌹</div>
+                      <div class="bouquet__rose bouquet__rose--9">🌹</div>
+                      <div class="bouquet__rose bouquet__rose--10">🌹</div>
+                      <div class="bouquet__rose bouquet__rose--11">🌹</div>
+                      <div class="bouquet__rose bouquet__rose--12">🌹</div>
+                      <div class="bouquet__leaf bouquet__leaf--1">🍃</div>
+                      <div class="bouquet__leaf bouquet__leaf--2">🍃</div>
+                      <div class="bouquet__leaf bouquet__leaf--3">🍃</div>
+                      <div class="bouquet__leaf bouquet__leaf--4">🍃</div>
+                    </div>
+                    <div class="bouquet__wrap">
+                      <div class="bouquet__wrap__paper"></div>
+                      <div class="bouquet__wrap__ribbon bouquet__wrap__ribbon--1"></div>
+                      <div class="bouquet__wrap__ribbon bouquet__wrap__ribbon--2"></div>
+                      <div class="bouquet__wrap__bow"></div>
+                    </div>
+                    <div class="bouquet__message">For you, my love 💕</div>
+                  </div>
+                }
+                
+                @if (!giftOpened()) {
+                  <p class="giftHint">Click the gift box to open it! 🎁</p>
+                }
               </div>
             </div>
 

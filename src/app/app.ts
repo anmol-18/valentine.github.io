@@ -65,8 +65,6 @@ export class App {
     },
   ];
 
-  protected readonly videoSrc = '/valentine-message.mp4';
-
   protected readonly slide = signal<Slide>('gate');
   protected readonly enteredName = signal('');
   protected readonly gateError = signal<string | null>(null);
@@ -74,6 +72,7 @@ export class App {
   protected readonly chosenDate = signal('');
   protected readonly chosenTime = signal('');
   protected readonly confirmed = signal(false);
+  protected readonly giftOpened = signal(false);
 
   protected readonly noBtnX = signal<number | null>(null);
   protected readonly noBtnY = signal<number | null>(null);
@@ -172,5 +171,9 @@ export class App {
   protected resetNoPosition() {
     this.noBtnX.set(null);
     this.noBtnY.set(null);
+  }
+
+  protected openGift() {
+    this.giftOpened.set(true);
   }
 }
